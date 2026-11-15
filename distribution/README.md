@@ -18,3 +18,5 @@ Do not commit credentials, claim a draft is published, or count an upstream PR a
 - Website PR https://github.com/cloudgpuapp/cloudgpu/pull/319 merged as e246da037f91ca12335b32961acb29ab3379e2cc. Production deploy https://github.com/cloudgpuapp/cloudgpu/actions/runs/43700393637 succeeded. Live desktop/mobile browser checks passed 2026-11-15 09:45 UTC: canonical page, Japanese locale without redirect, billing boundaries, anonymous live check, actual video playback, subtitles and discovery links. No application writes were observed; existing Cloudflare RUM requests were recorded separately.
 - New GitHub Pages enablement and CrewAI fork creation returned integration permission errors. The intended fallback is existing CloudGPU website hosting; `crewai-upstream.patch` is ready for a contributor with fork permission.
 - DEV.to and Hugging Face publishing still require owner credentials. HN requires owner-authored submission text and manual posting under its platform rules.
+
+Current detailed status and remaining acceptance: [status-20261115.md](status-20261115.md). Full-run filming checklist: [show-hn/recording-checklist.md](show-hn/recording-checklist.md).

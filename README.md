@@ -34,6 +34,8 @@ cp -R cloudgpu-discover-compute ~/.agents/skills/
 
 Repeat for other skills you need. Follow your client's current Agent Skills loading instructions and reload if required. Format compatibility is not a claim that every client has been tested.
 
+[Client-by-client setup](docs/clients.md) · [Quote → approve → run → save → release](docs/runbook.md)
+
 ## Workflow and safety
 
 1. Read https://cloudgpu.app/docs/agents and https://cloudgpu.app/openapi.json for the current contract.

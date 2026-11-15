@@ -11,7 +11,7 @@ with urlopen(Request('https://dev.to/api/articles/me/all?per_page=100', headers=
     existing = json.load(r)
 if any(a.get('title') == title.removeprefix('# ') for a in existing):
     raise SystemExit('Article already exists; inspect it before updating or republishing.')
-payload = {'article': {'title': title.removeprefix('# '), 'published': True, 'main_image': 'https://raw.githubusercontent.com/cloudgpu-app/cloudgpu-agent-skills/main/distribution/devto/cover.png', 'body_markdown': content.strip(), 'tags': ['ai', 'python', 'architecture', 'tutorial']}}
+payload = {'article': {'title': title.removeprefix('# '), 'published': True, 'canonical_url': 'https://cloudgpu.app/agent-lab/task-budget.html', 'main_image': 'https://raw.githubusercontent.com/cloudgpu-app/cloudgpu-agent-skills/main/distribution/devto/cover.png', 'body_markdown': content.strip(), 'tags': ['ai', 'python', 'architecture', 'tutorial']}}
 headers['Content-Type'] = 'application/json'
 req = Request('https://dev.to/api/articles', headers=headers, data=json.dumps(payload).encode(), method='POST')
 with urlopen(req, timeout=30) as r:
