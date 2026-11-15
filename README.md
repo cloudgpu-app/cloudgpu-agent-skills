@@ -1,3 +1,5 @@
+![CloudGPU — compute for agents](docs/assets/banner.svg)
+
 # CloudGPU Agent Compute Layer
 
 Agent Skills for discovering GPU compute, comparing task fit, requesting an explicit quote approval, running bounded work and exporting results. For developers outside mainland China only; see https://cloudgpu.app/terms.
@@ -11,6 +13,17 @@ Agent Skills for discovering GPU compute, comparing task fit, requesting an expl
 - `cloudgpu-open-model-inference`: plan GPU inference and evaluation with protected inputs and verified outputs.
 
 ## Install
+
+With the open Agent Skills CLI:
+
+```sh
+npx skills add cloudgpu-app/cloudgpu-agent-skills
+```
+
+Select only the skills and clients you need. Installing a skill does not rent a GPU or approve spending.
+
+[Try the anonymous Compute Lab](https://cloudgpu-app.github.io/cloudgpu-agent-skills/) · [Live readiness](https://cloudgpu.app/v1/public/agent-self-check) · [Verified small task recipes](https://github.com/cloudgpu-app/cloudgpu-mcp/tree/main/examples/verified-tasks)
+
 
 Download this repository's source archive from GitHub and extract it. From the extracted repository directory, copy a selected skill into your client's skills directory:
 
@@ -29,7 +42,7 @@ Repeat for other skills you need. Follow your client's current Agent Skills load
 4. Supply a reviewed workload command, pinned dependencies, compatible licensed models, authorized inputs and acceptance checks before execution.
 5. Download and verify outputs before destroying an interactive instance, or explicitly save them to Workspace / configured Job output storage and verify the saved result. Instance disks are erased on termination. Retention, funded-account access, storage budgets and output limits are separate from GPU rental; check the current contract before promising persistence.
 
-The skills describe documented interfaces, not pretested end-to-end workload recipes. No paid GPU execution or model generation was performed to validate them. Keep credentials in a secure client credential mechanism; never include secrets in chat, source or logs.
+The skills describe documented interfaces, not a guarantee that arbitrary workflows have been tested end to end. The linked small internal task recipes have published execution evidence; those results do not validate every skill, model or workflow. Keep credentials in a secure client credential mechanism; never include secrets in chat, source or logs.
 
 ## REST and MCP
 
@@ -52,3 +65,11 @@ GPU rental uses source-specific billing: minute-billed sources round partial min
 ## License
 
 MIT. See LICENSE. Model, dataset and third-party workflow licenses remain separate.
+
+## Explore and contribute
+
+- [Compute Lab](https://cloudgpu-app.github.io/cloudgpu-agent-skills/): anonymous live-check link, interactive billing illustration and historical task evidence.
+- [CrewAI readiness example](examples/crewai-readiness/): an actual framework tool with no LLM call or GPU allocation.
+- [Distribution source](distribution/): static Hugging Face Space, technical DEV article and platform-specific publishing constraints.
+
+The demo performs no visitor analytics. External services linked from it have their own policies.

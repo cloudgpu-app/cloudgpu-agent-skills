@@ -1,0 +1,5 @@
+Read-only Compute Lab tour; no GPU allocation.
+0–4s: Discover the anonymous self-check and owner-controlled workflow.
+4–11s: Change the example runtime from 12 to 61 minutes, then back to 12. The calculator compares minute and whole-hour rounding at an illustrative $0.40/hour. It is not a live quote.
+11–15s: Inspect historical environment, small-video and causal-LM LoRA smoke-test evidence, including fees and development-attempt qualifications.
+15–21s: View Agent Skills installation and remote/local MCP entry points. Installing or connecting does not approve a paid job.

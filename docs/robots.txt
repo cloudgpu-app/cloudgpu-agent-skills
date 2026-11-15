@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cloudgpu-app.github.io/cloudgpu-agent-skills/sitemap.xml
