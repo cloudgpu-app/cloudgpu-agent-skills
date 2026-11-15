@@ -22,7 +22,7 @@ npx skills add cloudgpu-app/cloudgpu-agent-skills
 
 Select only the skills and clients you need. Installing a skill does not rent a GPU or approve spending.
 
-[Try the anonymous Compute Lab](https://cloudgpu-app.github.io/cloudgpu-agent-skills/) · [Live readiness](https://cloudgpu.app/v1/public/agent-self-check) · [Verified small task recipes](https://github.com/cloudgpu-app/cloudgpu-mcp/tree/main/examples/verified-tasks)
+[Try the anonymous Compute Lab](https://cloudgpu.app/agent-lab/index.html) · [Live readiness](https://cloudgpu.app/v1/public/agent-self-check) · [Verified small task recipes](https://github.com/cloudgpu-app/cloudgpu-mcp/tree/main/examples/verified-tasks)
 
 
 Download this repository's source archive from GitHub and extract it. From the extracted repository directory, copy a selected skill into your client's skills directory:
@@ -68,7 +68,7 @@ MIT. See LICENSE. Model, dataset and third-party workflow licenses remain separa
 
 ## Explore and contribute
 
-- [Compute Lab](https://cloudgpu-app.github.io/cloudgpu-agent-skills/): anonymous live-check link, interactive billing illustration and historical task evidence.
+- [Compute Lab](https://cloudgpu.app/agent-lab/index.html): anonymous live-check link, interactive billing illustration and historical task evidence.
 - [CrewAI readiness example](examples/crewai-readiness/): an actual framework tool with no LLM call or GPU allocation.
 - [Distribution source](distribution/): static Hugging Face Space, technical DEV article and platform-specific publishing constraints.
 

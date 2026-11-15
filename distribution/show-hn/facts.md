@@ -6,7 +6,7 @@ Rules: https://news.ycombinator.com/newsguidelines.html and https://news.ycombin
 
 ## Material the owner can inspect
 
-- Playable, no-login demo: https://cloudgpu-app.github.io/cloudgpu-agent-skills/
+- Playable, no-login demo: https://cloudgpu.app/agent-lab/index.html
 - Anonymous live contract: https://cloudgpu.app/v1/public/agent-self-check
 - Source: https://github.com/cloudgpu-app/cloudgpu-agent-skills
 - Real small-task evidence and scripts: https://github.com/cloudgpu-app/cloudgpu-mcp/tree/main/examples/verified-tasks
