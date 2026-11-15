@@ -1,0 +1,32 @@
+name: Publish real recording to existing HF static Space
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: hf-static-video-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_SPACE_ID: cloudgpuapp/cloudgpu-agent-compute-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate the complete bundle without credentials or network
+        run: python distribution/huggingface/publish.py --dry-run --video-only
+      - name: Publish with the existing owner-provided Space token
+        if: ${{ env.HF_TOKEN != '' }}
+        run: |
+          python -m pip install --disable-pip-version-check huggingface_hub
+          python distribution/huggingface/publish.py --video-only
+      - name: Report missing connection without exposing credentials
+        if: ${{ env.HF_TOKEN == '' }}
+        run: |
+          echo "HF_TOKEN is not configured; no Hugging Face write was attempted." >> "$GITHUB_STEP_SUMMARY"
+          echo "The recording remains available on the CloudGPU site and public release." >> "$GITHUB_STEP_SUMMARY"

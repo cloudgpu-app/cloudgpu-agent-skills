@@ -10,6 +10,7 @@ from shutil import copytree, copy2
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--video-only', action='store_true', help='Update only the real-recording pages/assets; preserve Space metadata and unrelated files')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[2]
     with TemporaryDirectory() as temp:
@@ -18,6 +19,7 @@ def main():
         copy2(Path(__file__).with_name('README.md'), d / 'README.md')
         copytree(root / 'docs/assets', d / 'assets')
         copy2(root / 'docs/task-budget.html', d / 'task-budget.html')
+        copy2(root / 'docs/recorded-job.html', d / 'recorded-job.html')
         files = [p for p in d.rglob('*') if p.is_file()]
         assert (d / 'assets/read-only-tour.mp4').is_file()
         assert (d / 'assets/tour.vtt').is_file()
@@ -35,7 +37,9 @@ def main():
             info = api.space_info(repo)
         if info.sdk != 'static':
             raise SystemExit('Existing Space is not static; refusing to change its compute configuration.')
-        api.upload_folder(repo_id=repo, repo_type='space', folder_path=str(d), commit_message='Publish Agent Compute Lab static demo')
+        api.upload_folder(repo_id=repo, repo_type='space', folder_path=str(d),
+                          allow_patterns=['index.html', 'recorded-job.html', 'assets/real-mcp-job*'] if args.video_only else None,
+                          commit_message='Publish real MCP task recording' if args.video_only else 'Publish Agent Compute Lab static demo')
     print(f'https://huggingface.co/spaces/{repo}')
 
 

@@ -1,0 +1,14 @@
+Uncut chronological capture. Internal owner-preauthorized test balance; no new Google login/card payment. Published MCP 0.16.3 plus REST binding quote.
+
+00:00:00.000 Real internal GPU task recording. Existing owner authorization; no new login or checkout is shown.
+00:00:02.516 Discover before spending
+00:00:06.441 Review the actual source terms
+00:00:10.943 Apply the approved limits
+00:00:15.751 One Job, observed live
+00:00:36.142 One Job, observed live
+00:02:38.417 One Job, observed live
+00:02:59.030 Download and verify the saved result
+00:02:59.809 A real GPU report, saved locally
+00:03:05.071 Result verified. Compute released.
+
+Final GPU wallet charge: $0.0048. One paid Job submitted. A prior recording-preflight field mapping error halted before any GPU request or charge. This is not a commercial success rate, provider SLA, model inference benchmark or future price guarantee. Platform release was checked; independent supplier release was not probed during the recording.

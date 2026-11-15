@@ -1,0 +1,1 @@
+{"case": "gpu_environment_check", "status": "passed", "utc": "2026-11-15T14:46:53.764030+00:00", "gpu": ["NVIDIA GeForce RTX 3090, 24576 MiB, 595.71.05"], "python": "3.8.10", "elapsed_seconds": 0.044193, "scope": "NVIDIA driver and device visibility; not a model inference benchmark"}

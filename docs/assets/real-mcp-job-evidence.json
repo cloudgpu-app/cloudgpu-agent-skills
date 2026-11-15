@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-11-15T14:47:36.408Z",
+  "scenario": "owner-preauthorized internal test; no new login/checkout shown",
+  "transport": "published cloudgpu-mcp 0.16.3 plus REST binding quote",
+  "job_id": "job_08a3377a5c9e4ed59033e215fc3a6b35",
+  "instance_id": "2121977739633184770",
+  "job_status": "succeeded",
+  "exit_code": 0,
+  "cost_usd": 0.0048,
+  "cost_status": "final",
+  "platform_instance_status": "stopped",
+  "platform_release_confirmed": true,
+  "independent_upstream_release": "not independently probed in this video",
+  "output": {
+    "file": "environment-check.json",
+    "bytes": 284,
+    "sha256": "0d32fbb28b16b0508a349436584b5128aff4bac48651342e3b67ee3f18726890",
+    "report": {
+      "case": "gpu_environment_check",
+      "status": "passed",
+      "utc": "2026-11-15T14:46:53.764030+00:00",
+      "gpu": [
+        "NVIDIA GeForce RTX 3090, 24576 MiB, 595.71.05"
+      ],
+      "python": "3.8.10",
+      "elapsed_seconds": 0.044193,
+      "scope": "NVIDIA driver and device visibility; not a model inference benchmark"
+    }
+  },
+  "started_at": "2026-11-15T14:44:32.838Z",
+  "finished_at": "2026-11-15T14:47:36.408Z",
+  "wallet_funded_by_real_payment": false,
+  "storage_new_paid_consent": false,
+  "job_created_at_utc": "2026-11-15T14:44:47+00:00",
+  "job_started_at_utc": "2026-11-15T14:46:54+00:00",
+  "job_finished_at_utc": "2026-11-15T14:47:23+00:00",
+  "job_elapsed_seconds": 156,
+  "video_duration_seconds": 196.36,
+  "video_editing": "uncut; codec transcode only",
+  "paid_job_submissions": 1,
+  "recording_preflight_halts_before_submission": 1
+}
