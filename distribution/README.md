@@ -2,7 +2,7 @@
 
 One source, source-specific billing, reproducible small-task evidence, no invented conversion claims.
 
-- `../docs/`: attractive responsive static Compute Lab, interactive billing illustration, anonymous live readiness link, screenshots and labeled video tour. No GPU allocation and no visitor analytics.
+- `../docs/`: attractive responsive static Compute Lab, interactive billing illustration, anonymous live readiness link, screenshots and labeled video tour. No GPU allocation and no added application analytics.
 - `huggingface/`: reviewed static Space metadata and token-from-environment publisher. Static hosting only; no paid compute.
 - `devto/`: provider-neutral technical tutorial, required AI disclosure and API publisher. DEV prohibits business promotion in AI-assisted articles; no promotional version is sent there.
 - `show-hn/`: factual preparation only. HN prohibits generated submission text and automated posting; the owner must personally write and post.
@@ -15,6 +15,6 @@ Do not commit credentials, claim a draft is published, or count an upstream PR a
 - skills.sh discovery page returns HTTP 200: https://www.skills.sh/cloudgpu-app/cloudgpu-agent-skills/cloudgpu-discover-compute ; CLI lists all five skills. No artificial install activity was generated.
 - Public examples repository updated: https://github.com/cloudgpu-app/cloudgpu-examples/commit/1504d87 .
 - Existing upstream Skills PR updated, still awaiting a maintainer: https://github.com/BehiSecc/awesome-claude-skills/pull/1328 .
-- Website publication PR: https://github.com/cloudgpuapp/cloudgpu/pull/319 . Verify merge and live URLs before saying the site is deployed.
+- Website PR https://github.com/cloudgpuapp/cloudgpu/pull/319 merged as e246da037f91ca12335b32961acb29ab3379e2cc. Production deploy https://github.com/cloudgpuapp/cloudgpu/actions/runs/43700393637 succeeded. Live desktop/mobile browser checks passed 2026-11-15 09:45 UTC: canonical page, Japanese locale without redirect, billing boundaries, anonymous live check, actual video playback, subtitles and discovery links. No application writes were observed; existing Cloudflare RUM requests were recorded separately.
 - New GitHub Pages enablement and CrewAI fork creation returned integration permission errors. The intended fallback is existing CloudGPU website hosting; `crewai-upstream.patch` is ready for a contributor with fork permission.
 - DEV.to and Hugging Face publishing still require owner credentials. HN requires owner-authored submission text and manual posting under its platform rules.

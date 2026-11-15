@@ -20,7 +20,7 @@ Rules: https://news.ycombinator.com/newsguidelines.html and https://news.ycombin
 - ComfyUI test: Wan2.1 1.3B, 17 frames, 256×256; successful attempt 1,064s / $0.1105; all 12 development attempts $0.8775.
 - LoRA test: causal-LM SmolLM2-135M, 8 steps; not diffusion LoRA or 7B training; successful attempt 190s / $0.0097; four development attempts $0.0339.
 - GPU environment test: 191s / $0.0048.
-- The demo allocates no GPU, uses no customer data, and records no visitor event analytics.
+- The demo allocates no GPU, uses no customer data, and adds no application event analytics; hosting providers may collect operational telemetry.
 - Current known issues and sample sufficiency are available at the live readiness endpoint. Do not claim issues were resolved based on this static demo.
 - Installation and account connection alone do not approve a paid task.
 

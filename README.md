@@ -72,4 +72,4 @@ MIT. See LICENSE. Model, dataset and third-party workflow licenses remain separa
 - [CrewAI readiness example](examples/crewai-readiness/): an actual framework tool with no LLM call or GPU allocation.
 - [Distribution source](distribution/): static Hugging Face Space, technical DEV article and platform-specific publishing constraints.
 
-The demo performs no visitor analytics. External services linked from it have their own policies.
+The demo adds no application analytics. Hosting providers may collect operational telemetry under their own policies; external services linked from the demo have their own policies.
