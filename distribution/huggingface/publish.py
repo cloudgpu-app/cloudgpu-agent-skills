@@ -27,8 +27,12 @@ def main():
         from huggingface_hub import HfApi
         repo = os.environ['HF_SPACE_ID']  # Explicit owner/space-name, never guessed.
         api = HfApi(token=os.environ['HF_TOKEN'])
-        api.create_repo(repo_id=repo, repo_type='space', space_sdk='static', exist_ok=True)
-        info = api.space_info(repo)
+        from huggingface_hub.errors import RepositoryNotFoundError
+        try:
+            info = api.space_info(repo)
+        except RepositoryNotFoundError:
+            api.create_repo(repo_id=repo, repo_type='space', space_sdk='static', exist_ok=True)
+            info = api.space_info(repo)
         if info.sdk != 'static':
             raise SystemExit('Existing Space is not static; refusing to change its compute configuration.')
         api.upload_folder(repo_id=repo, repo_type='space', folder_path=str(d), commit_message='Publish Agent Compute Lab static demo')
