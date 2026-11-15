@@ -14,7 +14,7 @@ index 3f5a418..b6d7ea8 100644
  These examples demonstrate:
 diff --git a/integrations/cloudgpu_readiness/README.md b/integrations/cloudgpu_readiness/README.md
 new file mode 100644
-index 0000000..4612b3c
+index 0000000..4647e5b
 --- /dev/null
 +++ b/integrations/cloudgpu_readiness/README.md
 @@ -0,0 +1,39 @@
@@ -56,7 +56,7 @@ index 0000000..4612b3c
 +
 +## Verification
 +
-+Tested by directly invoking the actual CrewAI tool against the anonymous endpoint; no LLM calls or GPU allocations. Tested failure handling for invalid and oversized responses. This is not a paid-Job or end-to-end Crew execution acceptance test.
++Tested with Python 3.12.14 and CrewAI 1.6.1 by directly invoking the actual CrewAI tool against the anonymous endpoint; no LLM calls or GPU allocations. Tested failure handling for invalid and oversized responses. This is not a paid-Job or end-to-end Crew execution acceptance test.
 diff --git a/integrations/cloudgpu_readiness/readiness.py b/integrations/cloudgpu_readiness/readiness.py
 new file mode 100644
 index 0000000..7fda0d6
@@ -105,11 +105,11 @@ index 0000000..7fda0d6
 +    print(CloudGPUReadinessTool().run(task_type='gpu_environment_check'))
 diff --git a/integrations/cloudgpu_readiness/requirements.txt b/integrations/cloudgpu_readiness/requirements.txt
 new file mode 100644
-index 0000000..0ab33c7
+index 0000000..f5872f8
 --- /dev/null
 +++ b/integrations/cloudgpu_readiness/requirements.txt
 @@ -0,0 +1 @@
-+crewai==1.6.0
++crewai==1.6.1
 diff --git a/integrations/cloudgpu_readiness/test_readiness.py b/integrations/cloudgpu_readiness/test_readiness.py
 new file mode 100644
 index 0000000..86fe44f
