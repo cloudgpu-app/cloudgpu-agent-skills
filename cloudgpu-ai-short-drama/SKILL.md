@@ -7,6 +7,12 @@ description: Rent GPU compute for an AI short-drama pipeline using open video mo
 
 CloudGPU Agent Compute Layer: discover compute, assess task fit, request authorization, run bounded work and retrieve results.
 
+## Choose a production approach
+
+Offer a motion comic for still frames and dialogue, a hosted video model when the user needs separate clips without setting up a GPU, and rented ComfyUI when the user needs reusable graphs, model files or precise shot revisions. The [short-drama workflow guide](https://cloudgpu.app/cloud-gpu-for-ai-short-drama) compares the three approaches.
+
+For a quick planning exercise, use the [six-shot CSV](https://cloudgpu.app/resources/short-drama-shot-list.en.csv), also available [in Chinese](https://cloudgpu.app/resources/short-drama-shot-list.zh.csv). Replace its story and character references, keep the shot IDs, then ask the user to review the cut lengths and acceptance checks. Use the example to estimate the next render stage. It is an editable storyboard, and the guide labels the case's GPU time as an estimate based on a published benchmark.
+
 ## Workload recipe
 
 1. Collect story, language, aspect ratio, duration, shot list, character references/consent, model licenses, audio rights and delivery specs. Plan scripts, storyboard and edits locally first; remote compute is only for user-approved GPU stages.

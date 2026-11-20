@@ -9,7 +9,7 @@ Agent Skills for discovering GPU compute, comparing task fit, requesting an expl
 - `cloudgpu-discover-compute`: discover live GPU capabilities and compare workload requirements.
 - `cloudgpu-lora-finetune`: plan approved LoRA / QLoRA training and retrieve checkpoints.
 - `cloudgpu-comfyui-images`: prepare reviewed ComfyUI workflows and export images.
-- `cloudgpu-ai-short-drama`: plan open-model video stages with a project budget and review gates.
+- `cloudgpu-ai-short-drama`: compare short-drama production approaches, plan a [30-second storyboard](https://cloudgpu.app/cloud-gpu-for-ai-short-drama), and price open-model video stages with approval gates.
 - `cloudgpu-open-model-inference`: plan GPU inference and evaluation with protected inputs and verified outputs.
 
 ## Install
